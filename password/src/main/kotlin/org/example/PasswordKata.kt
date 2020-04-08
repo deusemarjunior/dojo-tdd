@@ -7,7 +7,13 @@ class PasswordKata (var senha: String){
     }
 
     fun temLetraMaiuscula() : Boolean {
-        return false
+        var isUpcase = false
+        for (num in senha) {
+            if (num.isUpperCase()) {
+                isUpcase = true
+            }
+        }
+        return isUpcase
     }
 
 }
