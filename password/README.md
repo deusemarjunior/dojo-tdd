@@ -6,6 +6,7 @@ We want to ensure that our users' passwords have the following rules:
 	 - Contains a lowercase
 	 - Contains a number
 	 - Contains an underscore
+	 - Contains a special character (@, #, $, %, &, * and +)
 
 # Key
 This kata shows the importance of:
