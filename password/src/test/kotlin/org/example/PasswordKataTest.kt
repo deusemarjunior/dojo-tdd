@@ -3,11 +3,12 @@ package org.example
 import org.junit.Test
 import kotlin.test.assertTrue
 
-class PasswordTest {
+class PasswordKataTest {
 
     @Test
     fun moreThan8haracters(){
-        var passwd = Password();
-        assertTrue(passwd.)
+        var passwd = PasswordKata()
+        assertTrue(passwd.temMaisDe8())
+
     }
 }
