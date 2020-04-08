@@ -7,8 +7,8 @@ class PasswordKataTest {
 
     @Test
     fun moreThan8haracters(){
+        val pwd = "123456789"
         var passwd = PasswordKata()
-        assertTrue(passwd.temMaisDe8())
-
+        assertTrue(passwd.temMaisDeOito())
     }
 }

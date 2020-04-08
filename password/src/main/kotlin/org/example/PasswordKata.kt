@@ -1,8 +1,10 @@
 package org.example
 
-class PasswordKata {
+class PasswordKata (var senha: String){
 
-    var password = ""
+    fun temMaisDeOito(){
+        return senha.length>8
+    }
 
 
 
