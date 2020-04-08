@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/dojo-tdd.iml" filepath="$PROJECT_DIR$/dojo-tdd.iml" group="dojo-tdd" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/dojo-tdd.iml" filepath="$PROJECT_DIR$/.idea/dojo-tdd.iml" />
     </modules>
   </component>
 </project>
