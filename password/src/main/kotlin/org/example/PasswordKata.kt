@@ -11,6 +11,7 @@ class PasswordKata (var senha: String){
         for (num in senha) {
             if (num.isUpperCase()) {
                 isUpcase = true
+                break
             }
         }
         return isUpcase
@@ -21,6 +22,7 @@ class PasswordKata (var senha: String){
         for (num in senha) {
             if (num.isLowerCase()) {
                 isLowerCase = true
+                break
             }
         }
         return isLowerCase
@@ -31,9 +33,18 @@ class PasswordKata (var senha: String){
         for (num in senha){
             if (num.isDigit()){
                 temUmNumero = true
+                break
             }
         }
         return temUmNumero
+    }
+
+    fun containUnderscore(): Boolean {
+        var temSublinhado = false
+        if(senha.contains("_")) {
+            temSublinhado = true
+        }
+        return temSublinhado
     }
 
 }

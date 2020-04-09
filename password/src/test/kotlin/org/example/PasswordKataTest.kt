@@ -33,4 +33,11 @@ class PasswordKataTest {
         assertTrue(passwd.temUmNumero())
     }
 
+    @Test
+    fun containUnderscore() {
+        val pwd = "adfadsfa"
+        var passwd = PasswordKata(pwd)
+        assertTrue(passwd.containUnderscore())
+    }
+
 }
