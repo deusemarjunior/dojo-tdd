@@ -14,9 +14,16 @@ class PasswordKataTest {
 
     @Test
     fun haveCapitalLetter() {
-        val pwd = "abcdefghijk"
+        val pwd = "aAcaefghijk"
         var passwd = PasswordKata(pwd)
-        assertTrue(passwd.temMaisDeOito())
         assertTrue(passwd.temLetraMaiuscula())
     }
+
+    @Test
+    fun haveLowerLetter() {
+        val pwd = "AsAAAAAAA"
+        var passwd = PasswordKata(pwd)
+        assertTrue(passwd.temLetraMinuscula())
+    }
+
 }

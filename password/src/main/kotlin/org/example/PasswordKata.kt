@@ -16,4 +16,14 @@ class PasswordKata (var senha: String){
         return isUpcase
     }
 
+    fun temLetraMinuscula(): Boolean {
+        var isLowerCase = false
+        for (num in senha) {
+            if (num.isLowerCase()) {
+                isLowerCase = true
+            }
+        }
+        return isLowerCase
+    }
+
 }
