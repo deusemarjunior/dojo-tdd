@@ -26,4 +26,14 @@ class PasswordKata (var senha: String){
         return isLowerCase
     }
 
+    fun temUmNumero(): Boolean {
+        var temUmNumero = false
+        for (num in senha){
+            if (num.isDigit()){
+                temUmNumero = true
+            }
+        }
+        return temUmNumero
+    }
+
 }

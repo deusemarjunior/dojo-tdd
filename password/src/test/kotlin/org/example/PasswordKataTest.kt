@@ -26,4 +26,11 @@ class PasswordKataTest {
         assertTrue(passwd.temLetraMinuscula())
     }
 
+    @Test
+    fun contemUmNumero(){
+        val pwd = "a1aaa"
+        var passwd = PasswordKata(pwd)
+        assertTrue(passwd.temUmNumero())
+    }
+
 }
