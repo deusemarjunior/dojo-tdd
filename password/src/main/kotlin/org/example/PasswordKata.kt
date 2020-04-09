@@ -8,8 +8,8 @@ class PasswordKata (var senha: String){
 
     fun temLetraMaiuscula() : Boolean {
         var isUpcase = false
-        for (num in senha) {
-            if (num.isUpperCase()) {
+        for (letra in senha) {
+            if (letra.isUpperCase()) {
                 isUpcase = true
                 break
             }
@@ -19,8 +19,8 @@ class PasswordKata (var senha: String){
 
     fun temLetraMinuscula(): Boolean {
         var isLowerCase = false
-        for (num in senha) {
-            if (num.isLowerCase()) {
+        for (letra in senha) {
+            if (letra.isLowerCase()) {
                 isLowerCase = true
                 break
             }
@@ -46,14 +46,14 @@ class PasswordKata (var senha: String){
     fun haveEspecialCharacter(): Boolean {
         var isEspecial = false
        // (@, #, $, %, &, * and +)
-        var caracteres =  listOf<Char>("@","#","$","%","&","*","+")
-        for (num in senha){
-            if (caracteres.contains(num)){
+        var caracteres =  listOf<Char>('@','#','$','%','&','*','+')
+        for (letra in senha){
+            if (caracteres.contains(letra)){
                 isEspecial = true
                 break
             }
         }
-        return  false
+        return  isEspecial
     }
 
 }
