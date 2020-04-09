@@ -40,11 +40,20 @@ class PasswordKata (var senha: String){
     }
 
     fun containUnderscore(): Boolean {
-        var temSublinhado = false
-        if(senha.contains("_")) {
-            temSublinhado = true
+        return senha.contains("_")
+    }
+
+    fun haveEspecialCharacter(): Boolean {
+        var isEspecial = false
+       // (@, #, $, %, &, * and +)
+        var caracteres =  listOf<Char>("@","#","$","%","&","*","+")
+        for (num in senha){
+            if (caracteres.contains(num)){
+                isEspecial = true
+                break
+            }
         }
-        return temSublinhado
+        return  false
     }
 
 }

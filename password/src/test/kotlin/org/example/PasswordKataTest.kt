@@ -35,9 +35,16 @@ class PasswordKataTest {
 
     @Test
     fun containUnderscore() {
-        val pwd = "adfadsfa"
+        val pwd = "ad_fadsfa"
         var passwd = PasswordKata(pwd)
         assertTrue(passwd.containUnderscore())
+    }
+
+    @Test
+    fun especialCharacter() {
+        val pwd = "ad_fadsfa"
+        var passwd = PasswordKata(pwd)
+        assertTrue(passwd.haveEspecialCharacter())
     }
 
 }
