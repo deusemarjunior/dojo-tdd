@@ -11,15 +11,29 @@ class FizzBuzzTest {
     fun inputIntegerOutputString(){
         //given
         var numberPositive = 5
-        var stringCheck = "sucess"
+        var stringCheck = "success"
         var fizzBuzz =  FizzBuzz()
 
         ///when
         var resultTest  = fizzBuzz.returnFizzBuzz()
 
         //then
-        Assert.assertEquals(resultTest, stringCheck)
+        Assert.assertEquals(stringCheck, resultTest)
 
     }
 
+    @Test
+    fun multipleOfThree(){
+        //given
+        var numberPositive = 6
+        var stringCheck = "Fizz"
+        var fizzBuzz =  FizzBuzz()
+
+        ///when
+        var resultTest  = fizzBuzz.returnFizzBuzz()
+
+        //then
+        Assert.assertEquals(stringCheck, resultTest)
+
+    }
 }

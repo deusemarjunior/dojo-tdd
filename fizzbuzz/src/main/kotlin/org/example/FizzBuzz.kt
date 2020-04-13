@@ -1,8 +1,8 @@
 package org.example
 
 class FizzBuzz {
-  fun returnFizzBuzz(): String {
-    return ""
+  fun returnFizzBuzz(number: Int): String {
+    return "success"
   }
 
 }
