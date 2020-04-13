@@ -10,12 +10,12 @@ class FizzBuzzTest {
     @Test
     fun inputIntegerOutputString(){
         //given
-        var numberPositive = 5
-        var stringCheck = "success"
+        var numberPositive = 4
+        var stringCheck = "$numberPositive"
         var fizzBuzz =  FizzBuzz()
 
         ///when
-        var resultTest  = fizzBuzz.returnFizzBuzz()
+        var resultTest  = fizzBuzz.returnFizzBuzz(numberPositive)
 
         //then
         Assert.assertEquals(stringCheck, resultTest)
@@ -30,10 +30,26 @@ class FizzBuzzTest {
         var fizzBuzz =  FizzBuzz()
 
         ///when
-        var resultTest  = fizzBuzz.returnFizzBuzz()
+        var resultTest  = fizzBuzz.returnFizzBuzz(numberPositive)
 
         //then
         Assert.assertEquals(stringCheck, resultTest)
 
     }
+
+    @Test
+    fun multipleOfFive(){
+        //given
+        var numberPositive = 10
+        var stringCheck = "Buzz"
+        var fizzBuzz =  FizzBuzz()
+
+        ///when
+        var resultTest  = fizzBuzz.returnFizzBuzz(numberPositive)
+
+        //then
+        Assert.assertEquals(stringCheck, resultTest)
+
+    }
+
 }
