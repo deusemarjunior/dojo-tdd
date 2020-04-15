@@ -10,7 +10,7 @@ class GreedKataTest {
 
         //given
         var greedKata = GreedKata()
-        var valor = 1
+        var valor = arrayOf(1)
 
         //when
         var retorno =  greedKata.calculaScore(valor)
@@ -24,7 +24,7 @@ class GreedKataTest {
     fun valorCincoRetorna50() {
 
         //given
-        var valor = 5
+        var valor = arrayOf(5)
 
         //when
         var retorno = GreedKata().calculaScore(valor)
@@ -44,7 +44,7 @@ class GreedKataTest {
         var retorno = GreedKata().calculaScore(valor)
 
         //then
-
+        Assert.assertEquals("1000 Points", retorno)
     }
 
 }
