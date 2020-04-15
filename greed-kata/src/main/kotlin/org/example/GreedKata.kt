@@ -3,12 +3,21 @@ package org.example
 class GreedKata {
 
     fun calculaScore(valor: Array<Int>): String {
-        var contador = 0
+        var contadorUm = 0
+        var contadorDois = 0
 
         valor.forEach {
-            if(it == 3) {
-                contador++
+            if(it == 1) {
+                contadorUm++
             }
+            if(it == 2){
+                contadorDois++
+            }
+        }
+        if(contadorUm == 3){
+            return "1000 Points"
+        } else  if(contadorDois == 3){
+            return "200 Points"
         }
 
         if (valor.contains(1)) {

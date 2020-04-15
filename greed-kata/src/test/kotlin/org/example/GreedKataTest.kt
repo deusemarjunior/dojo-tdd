@@ -47,4 +47,17 @@ class GreedKataTest {
         Assert.assertEquals("1000 Points", retorno)
     }
 
+    @Test
+    fun valorTresDoisRetorna200(){
+
+        //given
+        var valor = arrayOf(2,2,2)
+
+        //when
+        var retorno = GreedKata().calculaScore(valor)
+
+        //then
+        Assert.assertEquals("200 Points", retorno)
+    }
+
 }
