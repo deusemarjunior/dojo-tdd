@@ -1,5 +1,6 @@
 package org.example
 
+import org.junit.Assert
 import org.junit.Test
 
 class GreedKataTest {
@@ -12,11 +13,10 @@ class GreedKataTest {
         var valor = 1
 
         //when
-
-        var retorno = 100
+        var retorno =  greedKata.calculaScore(valor)
 
         //than
-
+        Assert.assertEquals("100 points", retorno)
 
     }
 
