@@ -18,6 +18,18 @@ class GreedKataTest {
         Assert.assertEquals("Invalid Payload Size", score)
     }
 
+    @Test
+    fun validateIfArrayHasSingleOne() {
+        //given
+        val dice = arrayOf(1, 0, 0, 0, 0)
+
+        //when
+        val score = GreedKata().calculateScore(dice)
+
+        //then
+        Assert.assertEquals("100 Points", score)
+    }
+
     /*
     @Test
     fun valorUmRetorna100() {

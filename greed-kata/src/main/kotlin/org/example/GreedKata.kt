@@ -3,6 +3,13 @@ package org.example
 class GreedKata {
 
     fun calculateScore(value: Array<Int>): String {
+        if(value.size != 5) {
+            return "Invalid Payload Size"
+        }
+
+        value.sumBy {
+            return "$it Points"
+        }
 
         return "0 Points"
     }
