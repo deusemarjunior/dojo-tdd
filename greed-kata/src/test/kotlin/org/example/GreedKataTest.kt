@@ -6,6 +6,20 @@ import org.junit.Test
 class GreedKataTest {
 
     @Test
+    fun validateArraySizeEqualsFive(){
+
+        //given
+        var dice = emptyArray<Int>();
+
+        //when
+        var score = GreedKata().calculateScore(dice)
+
+        //then
+        Assert.assertEquals("Invalid Payload Size", score)
+    }
+
+    /*
+    @Test
     fun valorUmRetorna100() {
 
         //given
@@ -71,5 +85,5 @@ class GreedKataTest {
         //then
         Assert.assertEquals("300 Points", retorno)
     }
-
+    */
 }

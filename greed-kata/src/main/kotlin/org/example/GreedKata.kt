@@ -2,6 +2,12 @@ package org.example
 
 class GreedKata {
 
+    fun calculateScore(value: Array<Int>): String {
+
+        return "0 Points"
+    }
+
+    /*
     fun calculaScore(valor: Array<Int>): String {
         var contadorUm = 0
         var contadorDois = 0
@@ -34,4 +40,6 @@ class GreedKata {
 
         return ""
     }
+
+     */
 }
