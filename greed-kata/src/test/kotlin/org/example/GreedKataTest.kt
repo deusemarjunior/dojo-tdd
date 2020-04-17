@@ -32,81 +32,23 @@ class GreedKataTest {
     @Test
     fun validateIfArrayHasSingleFive() {
         //given
-        val dice = arrayOf(1, 1, 1, 5, 1)
+        val dice = arrayOf(0, 0, 0, 5, 0)
 
         //when
         val score = GreedKata().calculateScore(dice)
 
         //then
-        Assert.assertEquals("1150 Points", score)
+        Assert.assertEquals("50 Points", score)
     }
-
-    /*
     @Test
-    fun valorUmRetorna100() {
-
+    fun validateIfArrayHasTripleOnes() {
         //given
-        var greedKata = GreedKata()
-        var valor = arrayOf(1)
+        val dice = arrayOf(1, 1, 1, 0, 0)
 
         //when
-        var retorno =  greedKata.calculaScore(valor)
-
-        //than
-        Assert.assertEquals("100 Points", retorno)
-
-    }
-
-    @Test
-    fun valorCincoRetorna50() {
-
-        //given
-        var valor = arrayOf(5)
-
-        //when
-        var retorno = GreedKata().calculaScore(valor)
-
-        //than
-        Assert.assertEquals("50 Points", retorno);
-
-    }
-
-    @Test
-    fun valorTresUnsRetorna1000(){
-
-       //given
-        var valor = arrayOf(1,1,1)
-
-        //when
-        var retorno = GreedKata().calculaScore(valor)
+        val score = GreedKata().calculateScore(dice)
 
         //then
-        Assert.assertEquals("1000 Points", retorno)
+        Assert.assertEquals("1000 Points", score)
     }
-
-    @Test
-    fun valorTresDoisRetorna200(){
-
-        //given
-        var valor = arrayOf(2,2,2)
-
-        //when
-        var retorno = GreedKata().calculaScore(valor)
-
-        //then
-        Assert.assertEquals("200 Points", retorno)
-    }
-
-    @Test
-    fun valorTresDoisRetorna300(){
-        //given
-        var valor = arrayOf(3,3,3)
-
-        //when
-        var retorno = GreedKata().calculaScore(valor)
-
-        //then
-        Assert.assertEquals("300 Points", retorno)
-    }
-    */
 }

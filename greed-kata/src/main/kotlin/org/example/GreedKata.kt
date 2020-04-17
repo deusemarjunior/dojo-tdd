@@ -8,47 +8,33 @@ class GreedKata {
         }
 
         var total = 0
+        var numberOne = 0
+        var numberTwo = 0
+        var numberThree = 0
+        var numberFour = 0
+        var numberFive = 0
+        var numberSix = 0
+
         value.forEach {
-            if (it == 1) {
+            if (it == 1)
+                numberOne++
+            if (it == 5)
+                total += 50
+        }
+
+        if (numberOne > 0) {
+            if (numberOne == 1)
                 total += 100
-            }
+            if (numberOne == 2)
+                total += 200
+            if (numberOne == 3)
+                total += 1000
+            if (numberOne == 4)
+                total == 1100
+            if (numberOne == 5)
+                total = 1200
         }
         return "$total Points"
     }
 
-    /*
-    fun calculaScore(valor: Array<Int>): String {
-        var contadorUm = 0
-        var contadorDois = 0
-        var contadorTres = 0
-
-        valor.forEach {
-            if(it == 1) {
-                contadorUm++
-            }
-            if(it == 2){
-                contadorDois++
-            }
-            if(it == 3){
-                contadorTres++
-            }
-        }
-        if(contadorUm == 3){
-            return "1000 Points"
-        } else  if(contadorDois == 3){
-            return "200 Points"
-        } else if(contadorTres == 3){
-            return "300 Points"
-        }
-
-        if (valor.contains(1)) {
-            return "100 Points"
-        } else if(valor.contains(5)){
-            return "50 Points"
-        }
-
-        return ""
-    }
-
-     */
 }
