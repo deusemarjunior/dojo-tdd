@@ -8,33 +8,34 @@ class GreedKata {
         }
 
         var total = 0
-        var numberOne = 0
+        var numberOne = value.count{ it == 1 }
         var numberTwo = 0
         var numberThree = 0
         var numberFour = 0
-        var numberFive = 0
+        var numberFive = value.count { it == 5 }
         var numberSix = 0
 
-        value.forEach {
-            if (it == 1)
-                numberOne++
-            if (it == 5)
-                total += 50
+        if(numberFive > 0 ){
+            total += 50*numberFive;
         }
 
-        if (numberOne > 0) {
-            if (numberOne == 1)
-                total += 100
-            if (numberOne == 2)
-                total += 200
-            if (numberOne == 3)
-                total += 1000
-            if (numberOne == 4)
-                total == 1100
-            if (numberOne == 5)
-                total = 1200
-        }
+        total += countPointsNumberOne(numberOne);
+
         return "$total Points"
     }
 
+    fun countPointsNumberOne(value: Int): Int {
+        var sum = 0
+        if (value > 0) {
+            if (value < 3){
+                sum += 100*value
+            }
+            if (value >= 3){
+                sum += 1000
+                sum += 100*value%3
+            }
+        }
+
+        return sum
+    }
 }

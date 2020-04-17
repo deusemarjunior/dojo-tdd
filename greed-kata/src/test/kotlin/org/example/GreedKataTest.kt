@@ -40,6 +40,7 @@ class GreedKataTest {
         //then
         Assert.assertEquals("50 Points", score)
     }
+
     @Test
     fun validateIfArrayHasTripleOnes() {
         //given
@@ -50,5 +51,19 @@ class GreedKataTest {
 
         //then
         Assert.assertEquals("1000 Points", score)
+    }
+
+    @Test
+    fun validateCountPointsOne(){
+        //given
+        val caseOverThree = 5
+        val caseLessThanThree = 2
+
+        //when
+        val scoreOverThree = GreedKata().countPointsNumberOne(caseOverThree)
+        val  scoreLessThanThree = GreedKata().countPointsNumberOne(caseLessThanThree)
+
+        //then
+
     }
 }
