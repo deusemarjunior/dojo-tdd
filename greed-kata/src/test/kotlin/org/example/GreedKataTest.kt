@@ -75,8 +75,8 @@ class GreedKataTest {
         val caseLessThanThree = 2
 
         //when
-        val scoreOverThree = GreedKata().countPointsNumberOne(caseOverThree)
-        val  scoreLessThanThree = GreedKata().countPointsNumberOne(caseLessThanThree)
+        val scoreOverThree = GreedKata().countPointsNumberFive(caseOverThree)
+        val  scoreLessThanThree = GreedKata().countPointsNumberFive(caseLessThanThree)
 
         //then
         Assert.assertEquals(100, scoreLessThanThree)
@@ -93,5 +93,10 @@ class GreedKataTest {
 
         //then
         Assert.assertEquals("200 Points", score)
+    }
+
+    @Test
+    fun countNumberAndSumPoint(){
+
     }
 }
