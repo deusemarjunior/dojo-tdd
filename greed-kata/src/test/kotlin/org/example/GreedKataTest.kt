@@ -82,4 +82,16 @@ class GreedKataTest {
         Assert.assertEquals(100, scoreLessThanThree)
         Assert.assertEquals(600, scoreOverThree)
     }
+
+    @Test
+    fun validateIfArrayHasTripleTwo() {
+        //given
+        val dice = arrayOf(2, 2, 2, 0, 0)
+
+        //when
+        val score = GreedKata().calculateScore(dice)
+
+        //then
+        Assert.assertEquals("200 Points", score)
+    }
 }
