@@ -20,6 +20,7 @@ class GreedKata {
         }
 
         total += countPointsNumberOne(numberOne);
+        total += countPointsNumberFive(numberFive)
 
         return "$total Points"
     }
@@ -32,7 +33,22 @@ class GreedKata {
             }
             if (value >= 3){
                 sum += 1000
-                sum += 100*value%3
+                sum += 100 * (value % 3)
+            }
+        }
+
+        return sum
+    }
+
+    fun countPointsNumberFive(value: Int): Int {
+        var sum = 0
+        if (value > 0) {
+            if (value < 3){
+                sum += 50 * value
+            }
+            if (value >= 3){
+                sum += 1000
+                sum += 50 * (value % 3)
             }
         }
 
