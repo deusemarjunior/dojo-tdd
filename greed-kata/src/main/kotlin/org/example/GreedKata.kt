@@ -7,11 +7,13 @@ class GreedKata {
             return "Invalid Payload Size"
         }
 
-        value.sumBy {
-            return "$it Points"
+        var total = 0
+        value.forEach {
+            if (it == 1) {
+                total += 100
+            }
         }
-
-        return "0 Points"
+        return "$total Points"
     }
 
     /*

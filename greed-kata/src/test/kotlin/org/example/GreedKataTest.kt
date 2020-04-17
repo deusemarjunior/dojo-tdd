@@ -29,6 +29,17 @@ class GreedKataTest {
         //then
         Assert.assertEquals("100 Points", score)
     }
+    @Test
+    fun validateIfArrayHasSingleFive() {
+        //given
+        val dice = arrayOf(1, 1, 1, 5, 1)
+
+        //when
+        val score = GreedKata().calculateScore(dice)
+
+        //then
+        Assert.assertEquals("1150 Points", score)
+    }
 
     /*
     @Test
